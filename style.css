@@ -1,3 +1,11 @@
-.text-shadow {
+body {
+    background-color: #e3f2fd;
+}
+
+.text {
     text-shadow: 2px 2px 3px black;
+    font-family: fantasy;
+}
+.container {
+    background-color: white;
 }
