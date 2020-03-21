@@ -27,10 +27,11 @@
       <div>
         <span
           ><input
+          class="lyricInput"
             type="text"
             value
             placeholder="Search for lyrics or artisits..."
-          /><button class="btn blue waves-effect waves-darken z-depth-3 ">
+          /><button class="btn blue waves-effect waves-darken z-depth-3" onclick="search()">
             Search
           </button></span
         >
@@ -39,7 +40,7 @@
           <div class="col s12 m6">
             <div class="card">
               <div class="card-image">
-                <img src="" />
+                <img src=""/>
                 <span class="card-title" id="album-cover"></span>
               </div>
               <div class="card-content">
@@ -56,5 +57,6 @@
     <!--JavaScript at end of body for optimized loading-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
