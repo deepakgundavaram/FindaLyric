@@ -21,34 +21,37 @@
     <br>
     <br>
 
-    <div class="container search-box">
+    <!-- <div class="container search-box"> -->
         <div class="row">
             <div class="col s4 offset-s4 search-col">
-                <span><input type="text" value placeholder="Search for Artist" id="artistSearch" />
+                <span><input class="center-align" type="text" value placeholder="Search for Artist" id="artistSearch" />
 
                 </span>
             </div>
             
 
                
-            </div>
+            
         </div>
-    </div>
+    <!-- </div> -->
 
 
-    <div class="container search-box">
+    <!-- <div class="container search-box"> -->
         <div class="row">
             <div class="col s4 offset-s4 search-col">
-                <span><input type="text" value placeholder="Search for Song" id="lyricSearch" /></span>
+                <span><input class="center-align" type="text" value placeholder="Search for Song" id="lyricSearch" /></span>
             </div>
 
         </div>
 
-    </div>
-    </div>
+    <!-- </div> -->
+    
     <div class="row center-align">
         <button class="btn blue waves-effect waves-darken z-depth-3 center-align" id="button" onclick="getLyrics()">
             Search
+        </button>
+        <button class="btn blue waves-effect waves-darken z-depth-3 center-align" id="clear" onclick="clearSearch()" >
+            Clear
         </button>
     </div>
     </div>
