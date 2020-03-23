@@ -1,11 +1,55 @@
 body {
-    background-color: #e3f2fd;
+  background-color: #e3f2fd;
+  /* background-image: url(https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&w=1000&q=80); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+ 
 }
 
 .text {
-    text-shadow: 2px 2px 3px black;
-    font-family: fantasy;
+  text-shadow: 2px 2px 3px black;
+  font-family: fantasy;
+  margin-top: 19px;
+ 
+  
 }
+
 .container {
-    background-color: white;
+  background-color: white;
+  
+
+}
+
+header {
+  padding: 40px;
+  background-image: url(https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+#results {
+  border: black;
+  border-radius: 5px;
+} 
+
+h1 {
+  font-size: 80px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+#lyrics {
+  background-color: white;
+}
+
+.search-box {
+  background-color: #e3f2fd
+
+}
+
+.search-col {
+  background-color: white;
 }
