@@ -1,28 +1,67 @@
-
 <html>
+
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>Lyrics</title>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <meta name="viewport" content="initial-scale=1">
-    <script  src="./script.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
+
 <body>
-    <div class="jumbotron">
-		<h1>Get The Lyrics<br>
-    From Your Favorite Artists</h1>
-    <div class="triangle">
-    </div>
-    </div>
-    <div id="searchArea">
-        <input id="artistSearch" placeholder="Type an Artist" /><br><br>
-        <input id="lyricSearch" placeholder="Type an song title" /><br><br>        
-            <button onclick="getLyrics()">Get Me My Lyrics!</button>
+    <header>
+        <h1 class="center-align blue-text text"><i class="medium material-icons">album</i> Find a Lyric <i
+                class="medium material-icons">album</i></h1>
+        <h4 class="center-align blue-text text">Find the lyrics to all your favorite songs, all in one spot</h4>
+    </header>
+
+    <br>
+    <br>
+
+    <!-- <div class="container search-box"> -->
+        <div class="row">
+            <div class="col s4 offset-s4 search-col">
+                <span><input class="center-align" type="text" value placeholder="Search for Artist" id="artistSearch" />
+
+                </span>
+            </div>
+            
+
+               
+            
         </div>
-        <div id="lyrics">
-		        </div>
-    </body>
-    </html>
+    <!-- </div> -->
+
+
+    <!-- <div class="container search-box"> -->
+        <div class="row">
+            <div class="col s4 offset-s4 search-col">
+                <span><input class="center-align" type="text" value placeholder="Search for Song" id="lyricSearch" /></span>
+            </div>
+
+        </div>
+
+    <!-- </div> -->
+    
+    <div class="row center-align">
+        <button class="btn blue waves-effect waves-darken z-depth-3 center-align" id="button" onclick="getLyrics()">
+            Search
+        </button>
+        <button class="btn blue waves-effect waves-darken z-depth-3 center-align" id="clear" onclick="clearSearch()" >
+            Clear
+        </button>
+    </div>
+    </div>
+
+    <div class="container">
+    <div id="lyrics">
+        <!-- where lyrics go -->
+    </div>
+</div>
+</body>
+
+</html>
 
