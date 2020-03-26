@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -5,14 +6,14 @@
     <title>Lyrics</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <meta name="viewport" content="initial-scale=1">
-    <script src="script.js"></script>
+   
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
+    <header class="z-depth-4">
         <h1 class="center-align blue-text text"><i class="medium material-icons">album</i> Find a Lyric <i
                 class="medium material-icons">album</i></h1>
         <h4 class="center-align blue-text text">Find the lyrics to all your favorite songs, all in one spot</h4>
@@ -23,23 +24,18 @@
 
     <!-- <div class="container search-box"> -->
         <div class="row">
-            <div class="col s4 offset-s4 search-col">
-                <span><input class="center-align" type="text" value placeholder="Search for Artist" id="artistSearch" />
-
-                </span>
-            </div>
-            
-
-               
-            
+            <div class="col s4 offset-s4 search-col z-depth-4">
+                <span><input class="center-align input" type="text" value placeholder="Search for Artist" id="artistSearch" /></span>
+              
+          </div>
         </div>
     <!-- </div> -->
 
 
     <!-- <div class="container search-box"> -->
         <div class="row">
-            <div class="col s4 offset-s4 search-col">
-                <span><input class="center-align" type="text" value placeholder="Search for Song" id="lyricSearch" /></span>
+            <div class="col s4 offset-s4 search-col z-depth-4">
+                <span><input class="center-align input" type="text" value placeholder="Search for Song" id="lyricSearch" /></span>
             </div>
 
         </div>
@@ -47,7 +43,7 @@
     <!-- </div> -->
     
     <div class="row center-align">
-        <button class="btn blue waves-effect waves-darken z-depth-3 center-align" id="button" onclick="getLyrics()">
+        <button class="btn blue waves-effect waves-darken z-depth-3 center-align" id="button" onclick="getSongLyrics()">
             Search
         </button>
         <button class="btn blue waves-effect waves-darken z-depth-3 center-align" id="clear" onclick="clearSearch()" >
@@ -57,11 +53,21 @@
     </div>
 
     <div class="container">
-    <div id="lyrics">
-        <!-- where lyrics go -->
-    </div>
+        
+        <div class="col s12 m6 z-depth-4">
+            <div class="card">
+              <div class="artist-image" id="artistPic">
+              </div>
+                  <h3 class="center-align">Lyrics</h3>
+                <div id="lyrics">
+                    <!-- where lyrics go -->
+                </div>             
+            </div>
+          </div>
+    
 </div>
+
+<script src="script.js"></script>
 </body>
 
 </html>
-
