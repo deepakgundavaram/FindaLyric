@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="z-depth-4">
         <h1 class="center-align blue-text text"><i class="medium material-icons">album</i> Find a Lyric <i
                 class="medium material-icons">album</i></h1>
         <h4 class="center-align blue-text text">Find the lyrics to all your favorite songs, all in one spot</h4>
@@ -23,8 +23,8 @@
 
     <!-- <div class="container search-box"> -->
         <div class="row">
-            <div class="col s4 offset-s4 search-col">
-                <span><input class="center-align" type="text" value placeholder="Search for Artist" id="artistSearch" /></span>
+            <div class="col s4 offset-s4 search-col z-depth-4">
+                <span><input class="center-align input" type="text" value placeholder="Search for Artist" id="artistSearch" /></span>
               
           </div>
         </div>
@@ -33,8 +33,8 @@
 
     <!-- <div class="container search-box"> -->
         <div class="row">
-            <div class="col s4 offset-s4 search-col">
-                <span><input class="center-align" type="text" value placeholder="Search for Song" id="lyricSearch" /></span>
+            <div class="col s4 offset-s4 search-col z-depth-4">
+                <span><input class="center-align input" type="text" value placeholder="Search for Song" id="lyricSearch" /></span>
             </div>
 
         </div>
@@ -52,9 +52,18 @@
     </div>
 
     <div class="container">
-    <div id="lyrics">
-        <!-- where lyrics go -->
-    </div>
+        
+        <div class="col s12 m6 z-depth-4">
+            <div class="card">
+              <div class="artist-image" id="artistPic">
+              </div>
+                  <h3 class="center-align">Lyrics</h3>
+                <div id="lyrics">
+                    <!-- where lyrics go -->
+                </div>             
+            </div>
+          </div>
+    
 </div>
 
 <script src="script.js"></script>
