@@ -1,88 +1,55 @@
-
-@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
-
-*, *:before, *:after {
-  font-family: 'Fredoka One', cursive !important;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
- }
-
-.jumbotron{
-  background-image: url("http://thumbs.dreamstime.com/x/retro-s-seamless-pattern-background-vintage-memphis-fashion-style-illustration-ideal-fabric-design-paper-print-website-57384167.jpg");
-  color: white;
+body {
+  background-color: #e3f2fd;
+  /* background-image: url(https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&w=1000&q=80); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+ 
 }
 
-.jumbotron h1{
-  margin: auto;
-  transform: rotate(10deg);
-  font-size: 350%!important;
-  padding: 2%;
-  border: 1px solid white;
-  width: 50%;
-  border-radius: 80%;
-  background-color: orangered;
-  color: white !important;
-}
-.triangle{
-  width: 0; 
-	height: 0; 
-	border-left: 20px solid transparent;
-	border-right: 50px solid transparent;
-	position: relative;
-  margin-left: 40%;
-  transform: rotate(10deg);
-	border-top: 60px solid orangered;
-  margin-top: -1.8%;
-}
-#ghost{
-  opacity: 0;
-  display: none;
- }
-
-h1{
-  font-family: 'Fredoka One', cursive !important;
-  text-align: center;
+.text {
+  text-shadow: 2px 2px 3px black;
+  font-family: fantasy;
+  margin-top: 19px;
+ 
+  
 }
 
-input{
-  width: 25%;
-  height: 50px;
-  font-size: 2em;
-  text-align: center;
+.container {
+  background-color: white;
+  
+
 }
 
-button{
-  width: 25%;
-  height: 45px;
-  font-size: 1.25em;
-  border: 1px solid grey;
-  border-radius: 2%;
+header {
+  padding: 40px;
+  background-image: url(https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
 }
 
-button:hover{
-  background-color: gray;
-  color: white;
-  border: 1px solid black;
+#results {
+  border: black;
+  border-radius: 5px;
+} 
+
+h1 {
+  font-size: 80px;
 }
 
-#searchArea{
-  text-align: center;
+h4 {
+  font-size: 40px;
 }
 
-img{
-  float: left;
-  margin-right: 10%;
-  margin-left: 25%;
+#lyrics {
+  background-color: white;
 }
 
-p{
-  margin-right: 5%;
-  font-family: sans-serif;
-}
+/* .search-box { */
+  /* background-color: #e3f2fd */
 
-#lyrics{
-  width: 80%;
-  margin: auto;
-}
+/* } */
 
+.search-col {
+  background-color: white;
+}

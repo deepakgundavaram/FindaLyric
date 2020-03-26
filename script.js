@@ -1,3 +1,11 @@
+function clearSearch() {
+    $("#lyricSearch").val("");
+    $("#artistSearch").val("");
+    $("#lyrics").html("")
+}
+
+
+
 function getLyrics(){
     var artistSearch = document.getElementById("artistSearch").value;
     var songSearch = document.getElementById("lyricSearch").value;
