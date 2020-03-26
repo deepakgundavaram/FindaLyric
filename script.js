@@ -63,3 +63,6 @@ function clearSearch() {
               
 };
 prepend
+
+lastfm = apikey 9f2163989bb8a45ce33782a837bb012a
+
