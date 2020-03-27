@@ -15,10 +15,13 @@ body {
  
   
 }
-
+.card{
+  border: solid 5px burlywood;
+}
 .container {
   /* background-color: #e3f2fd; */
   padding: 20px;
+  margin: 20px;
 }
 
 header {
@@ -47,10 +50,11 @@ h4 {
 }
 
 #lyrics {
-  /* background-color:  white; */
+  background-color:  white;
   padding: 20px;
   font-size: large;
   font-weight: 100;
+ 
 }
 
 .search-box { 
