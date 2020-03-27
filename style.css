@@ -4,7 +4,6 @@ body {
   /* background-image: url(https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&w=1000&q=80); */
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
- 
 }
 
 .text {
@@ -12,13 +11,17 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-top: 19px;
   color: #000;
- 
-  
+}
+
+.card{
+  border: groove 5px #2196F3;
+  border-radius: 15px;
 }
 
 .container {
-  /* background-color: #e3f2fd; */
+  background-color: #cfe3ff;
   padding: 20px;
+  margin: 20px;
 }
 
 header {
@@ -28,7 +31,6 @@ header {
   background-image: url(https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&w=1000&q=80);
   background-repeat: no-repeat;
   background-size: cover;
- 
 }
 
 #results {
@@ -39,15 +41,17 @@ header {
 h1 {
   font-size: 80px;
 }
+
 h3{
   padding-top: 20px;
 }
+
 h4 {
   font-size: 40px;
 }
 
 #lyrics {
-  /* background-color:  white; */
+  background-color:  white;
   padding: 20px;
   font-size: large;
   font-weight: 100;
@@ -55,12 +59,29 @@ h4 {
 
 .search-box { 
   background-color: #e3f2fd
-
 }
 
 .search-col {
   background-color: white;
-  border: solid 2px #cee3ed;
+  border: groove 2px #2196F3;
   border-radius: 35px;
   color: #000;
 }
+
+<<<<<<< HEAD
+#artistPic {
+  text-align: center;
+  padding-top: 50px;
+  
+}
+
+#artistPic > img {
+  width: 50%;
+  border: groove 10px #2196F3;
+}
+=======
+.btn {
+  border: solid 2px #cee3ed;
+  border-radius: 35px;
+}
+>>>>>>> 1327d5be6cbf251fbfbce7abffaebcac6a1d64b7

@@ -129,11 +129,15 @@ function getSongLyrics() {
   var queryURL = `https://orion.apiseeds.com/api/music/lyric/${artist}/${song}${apikey}`;
   console.log(queryURL);
   $.ajax({
-    url: queryURL,
+    url: queryURL, 
     method: "GET"
   }).then(function (response) {
     var lyricsBody = response.result.track.text;
     var lyric = document.createElement("p");
+    var trackTitle = response.result.track.name;
+    var title = document.createElement("h5");
+    title.classList.add("center-align");
+    title.innerHTML = trackTitle
     lyric.classList.add("center-align");
     lyricsBody = lyricsBody
       .replace(/\r\n/g, "<br />")
@@ -141,6 +145,7 @@ function getSongLyrics() {
     lyric.innerHTML = lyricsBody;
     console.log(response);
     document.getElementById("lyrics").appendChild(lyric);
+    document.getElementById("lyrics").prepend(title)
   });
   getArtistImage()
 }
@@ -150,24 +155,21 @@ function getSongLyrics() {
 
 
 function getArtistImage() {
-  var artist = document.getElementById("artistSearch").value;
-  var apikey = "&apikey=0d990fVFAdY2XfKF2BvVRyUSgdJMCbReK6xWurMLBxsjSsVF2h06ADB0";
-  var queryURL = `https://api.happi.dev/v1/music?q=${artist}${apikey}`;
-  $.ajax({
-    url: queryURL,
-    method: "GET"
-  }).then(function (response) {
-    console.log(response)
-    // var artistImage = repsonse.result[0].cover;
-    // var image = document.createElement("img");
-    // image.innerHTML = artistImage;
-    // document.getElementById("artistPic").prepend(lyric);
-
-
-
-
-
-  });
+    var artist = document.getElementById("artistSearch").value;
+    var apikey = "&apikey=0d990fVFAdY2XfKF2BvVRyUSgdJMCbReK6xWurMLBxsjSsVF2h06ADB0";
+    var queryURL = `https://api.happi.dev/v1/music?q=${artist}${apikey}`; 
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+      }).then(function(response) {
+        console.log(response)
+        var artistImage = response.result[0].cover;
+        var image = document.createElement("img");
+        image.src = artistImage;
+        image.classList.add("z-depth-4");
+        document.getElementById("artistPic").append(image);
+      });
 
 }
+
 
