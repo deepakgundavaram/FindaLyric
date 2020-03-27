@@ -5,10 +5,17 @@
 
 “Hold me closer, Tony Danza”
 Wait, is that right?
-As a music aficionado, I want to find lyrics to my favorite songs so that I can tell that guy he has the wrong lyrics
+Is there "a bathroom on the right", or "a bad moon on the rise?"
+As a music aficionado, I want to find lyrics to my favorite songs so that I can tell that guy he has the wrong lyrics.
 
 ### Process
 
+Krishna - back-end
+Jason - front-end
+Matthew - jack-of-all-trades
+
+apiseeds API used to get the lyrics
+Materialize used as the CSS framework
 
 
 
