@@ -68,3 +68,8 @@ h4 {
   border-radius: 35px;
   color: #000;
 }
+
+.btn {
+  border: solid 2px #cee3ed;
+  border-radius: 35px;
+}

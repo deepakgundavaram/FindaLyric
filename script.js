@@ -53,6 +53,10 @@ function getSongLyrics() {
   }).then(function(response) {
     var lyricsBody = response.result.track.text;
     var lyric = document.createElement("p");
+    var trackTitle = response.result.track.name;
+    var title = document.createElement("h5");
+    title.classList.add("center-align");
+    title.innerHTML = trackTitle
     lyric.classList.add("center-align");
     lyricsBody = lyricsBody
       .replace(/\r\n/g, "<br />")
@@ -60,6 +64,7 @@ function getSongLyrics() {
     lyric.innerHTML = lyricsBody;
     console.log(response);
     document.getElementById("lyrics").appendChild(lyric);
+    document.getElementById("lyrics").prepend(title)
   });
   getArtistImage()
 }
