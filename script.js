@@ -4,7 +4,7 @@ function clearSearch() {
   $("#lyrics").html("");
 }
 
-// function getaLyrics(){
+// function getLyrics(){
 
 //     var artistSearch = document.getElementById("artistSearch").value;
 //     var songSearch = document.getElementById("lyricSearch").value;
@@ -26,7 +26,7 @@ function clearSearch() {
 //         contentType: 'application/json',
 //         success: function(data) {
 //              console.log(data);
-//             var artist_id=  data.message.body.artist_list[0].artist.artist_id ;
+//             // var artist_id=  data.message.body.artist_list[0].artist.artist_id ;
 //             var lyricsBody = data.message.body.lyrics.lyrics_body.split(/\s+/).slice(0,100).join(" ")+ "...";
 //             var j = document.createElement("p")
 //             j.textContent = lyricsBody
