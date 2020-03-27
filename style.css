@@ -68,6 +68,7 @@ h4 {
   color: #000;
 }
 
+<<<<<<< HEAD
 #artistPic {
   text-align: center;
   padding-top: 50px;
@@ -78,3 +79,9 @@ h4 {
   width: 50%;
   border: groove 10px #2196F3;
 }
+=======
+.btn {
+  border: solid 2px #cee3ed;
+  border-radius: 35px;
+}
+>>>>>>> 1327d5be6cbf251fbfbce7abffaebcac6a1d64b7
