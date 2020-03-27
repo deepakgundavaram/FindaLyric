@@ -73,16 +73,10 @@ function getArtistImage() {
         method: "GET"
       }).then(function(response) {
         console.log(response)
-        // var artistImage = repsonse.result[0].cover;
-        // var image = document.createElement("img");
-        // image.innerHTML = artistImage;
-        // document.getElementById("artistPic").prepend(lyric);
-
-
-
-
-
+        var artistImage = response.result[0].cover;
+        var image = document.createElement("img");
+        image.innerHTML = artistImage;
+        document.getElementById("artistPic").append(`${artistImage}`);
       });
 
 }
-
