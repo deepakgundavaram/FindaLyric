@@ -5,7 +5,7 @@
 
 “Hold me closer, Tony Danza”
 Wait, is that right?
-As a music aficionado, I want to find lyrics to my favorite songs so that I can tell that guy he has the wrong lyrics
+As a music aficionado, I want to find lyrics to my favorite songs and follow my favorite artists twitter page.
 
 ### Process
 
