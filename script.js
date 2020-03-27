@@ -48,7 +48,7 @@ function getSongLyrics() {
   var queryURL = `https://orion.apiseeds.com/api/music/lyric/${artist}/${song}${apikey}`;
   console.log(queryURL);
   $.ajax({
-    url: queryURL,
+    url: queryURL, 
     method: "GET"
   }).then(function(response) {
     var lyricsBody = response.result.track.text;
@@ -80,8 +80,11 @@ function getArtistImage() {
         console.log(response)
         var artistImage = response.result[0].cover;
         var image = document.createElement("img");
-        image.innerHTML = artistImage;
-        document.getElementById("artistPic").append(`${artistImage}`);
+        image.src = artistImage;
+        image.classList.add("z-depth-4");
+        document.getElementById("artistPic").append(image);
       });
 
 }
+
+
