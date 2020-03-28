@@ -2,13 +2,13 @@ function clearSearch() {
   $("#lyricSearch").val("");
   $("#artistSearch").val("");
   $("#lyrics").html("");
-  // $(".twitter").html("");
+  $(".twitter").html("");
   $("#artistPic").html("");
 }
 
 function empty() {
   $("#lyrics").html("");
-  // $(".twitter").html("");
+  $(".twitter").html("");
 }
 
 function gettwitter() {
