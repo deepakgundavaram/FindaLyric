@@ -87,6 +87,8 @@ function getSongLyrics() {
     document.getElementById("lyrics").prepend(title);
   });
   getArtistImage();
+  $("#lyrics").empty()
+  $("#artistPic").empty()
 }
 
 function getArtistImage() {
